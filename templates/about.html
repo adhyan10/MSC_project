@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>StockPred</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+        <h3 class="float-md-start mb-0"><a href="/">Home</a></h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="/predict">Prediction</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+      <h2>Disclaimer!</h2>
+      <p>
+        Futures, stocks and options trading involves substantial risk of loss and is not suitable for every investor. The valuation of futures, stocks and options may fluctuate, and, as a result, clients may lose more than their original investment. The impact of seasonal and geopolitical events is already factored into market prices. The highly leveraged nature of futures trading means that small market movements will have a great impact on your trading account and this can work against you, leading to large losses or can work for you, leading to large gains.
+
+If the market moves against you, you may sustain a total loss greater than the amount you deposited into your account. You are responsible for all the risks and financial resources you use and for the chosen trading system. You should not engage in trading unless you fully understand the nature of the transactions you are entering into and the extent of your exposure to loss. If you do not fully understand these risks you must seek independent advice from your financial advisor.
+
+All trading strategies are used at your own risk.
+
+      </p>
+      <h2>Model Evaluation</h2>
+      <p>Train Score: 0.00045 MSE (0.02 RMSE)<br>
+        Test Score: 0.00436 MSE (0.07 RMSE)</p>
+
+        <p>
+          While testing and validating,<br>
+          For 30 days the rmse(Root Mean Squared Error) is between 6 and 7,<br>
+          For 1000 days the rmse(Root Mean Square Error) is between 40 and 41.
+        </p>
+
+
+      <h2>LSTM(Long Short Term Memory)</h2>
+    <p>
+        Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can not only process single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems).
+
+A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
+
+LSTM networks are well-suited to classifying, processing and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series. LSTMs were developed to deal with the vanishing gradient problem that can be encountered when training traditional RNNs. Relative insensitivity to gap length is an advantage of LSTM over RNNs.
+        </p>
+        <h3>LSTM Image</h3>
+        <img src="{{ lstm_a }}",alt="lstm architecture" width="500" height="333">
+        <h3>LSTM CELL</h3>
+        <img src="{{ lstm_cell }}",alt="lstm architecture" width="500" height="333">
+
+        
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p class="text-white">Project by Dhyanesh of MSC part 2.</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
+
+
